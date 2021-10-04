@@ -231,17 +231,14 @@ class AdvanceSnackBar {
   }
 
   __generateColor(var opacity, var color) {
-    // https://backstrap.net/colors.html
-
-    if (type == "SECONDARY" || type == "LIGHT" || mode == "MODERN") {
-      print("a");
-      return Colors.black.withOpacity(opacity);
-    } else if (type == "DARK") {
-      print("b");
+    if (type == "DARK") {
       return Colors.white.withOpacity(opacity);
+    } else if (type == "SECONDARY" ||
+        type == "LIGHT" ||
+        mode == "MODERN" ||
+        type != "DARK") {
+      return Colors.black.withOpacity(opacity);
     } else {
-      print("c");
-      print(color.toString());
       return color.withOpacity(opacity);
     }
   }
