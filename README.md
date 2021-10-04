@@ -214,7 +214,7 @@ It has a qnique design.
 You can change advance mode design with add a single word "MODERN".
 in modern mode youcan't change devider color we are working on it.
 
-<img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/modern.gif?raw=true" align = "right" weight="300" height = "300px">
+<img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/modern.gif?raw=true" align = "right" weight="500" height = "400px">
 ```dart
 ///Modern mode :- Example 1
 AdvanceSnackBar(
