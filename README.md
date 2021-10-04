@@ -20,7 +20,7 @@ Advance Notification have three mode in  Advance Notification Snackbar =>  BASIC
 
 You can use basic Snackbar with background color, text color, position
 
-<img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/basic.gif?raw=true" align = "right" height = "300px">
+<img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/basic.gif?raw=true" align = "right" height = "400px">
 
 ```dart
 ///For Basic mode you don't need to write mode
@@ -29,26 +29,28 @@ AdvanceSnackBar(message: "Hello...").show(context);
 
 ```dart
 ///Basic with Background color
- AdvanceSnackBar(message: "Notification Message", bgColor: Colors.blueAccent).show(context);
+ AdvanceSnackBar(
+     message: "Notification Message", 
+     bgColor: Colors.blueAccent).show(context);
 ```
 
 
 ```dart
 ///Basic with background color or text color
 AdvanceSnackBar(
-                message: "Notification Message",
-                bgColor: Colors.tealAccent,
-                textColor: Colors.red).show(context);
+    message: "Notification Message",
+    bgColor: Colors.tealAccent,
+    textColor: Colors.red).show(context);
 ```
 
 
 ```dart
 ///Basic with background color or text  or fixed position
 AdvanceSnackBar(
-                message: "Notification Message",
-                bgColor: Colors.tealAccent,
-                textColor: Colors.red,
-                isFixed: false).show(context);
+    message: "Notification Message",
+    bgColor: Colors.tealAccent,
+    textColor: Colors.red,
+    isFixed: false).show(context);
 ```
 
 ### Advance mode 
@@ -60,8 +62,8 @@ you can override the close button event or color  and icon image.
 /// Advance mode :- Example 1
 /// Advance mode have many 
  AdvanceSnackBar(
-                message: "Notification Message",
-                mode: "ADVANCE",).show(context);
+     message: "Notification Message",
+     mode: "ADVANCE",).show(context);
 ```
 
 
@@ -70,21 +72,21 @@ you can override the close button event or color  and icon image.
 /// You can add your custom duration for hide notification. default duration is 4 seconds. We have multiple types in Advance mode like : PRIMARY,SECONDARY,LIGHT,DARK,SUCCESS,INFO,WARNING,ERROR default type is SUCCESS
 
 AdvanceSnackBar(
-                message: "Notification Message",
-                mode: "ADVANCE",
-                duration: Duration(seconds: 5),).show(context);
+    message: "Notification Message",
+    mode: "ADVANCE",
+    duration: Duration(seconds: 5),).show(context);
 ```
 
 ```dart
 ///Advance mode :- Example 3
 /// Change bgColor , text color close iconColor 
 AdvanceSnackBar(
-                message: "Notification Message",
-                mode: "ADVANCE",
-                duration: Duration(seconds: 5),
-                bgColor: Colors.red,
-                textColor: Colors.black,
-                iconColor: Colors.black,).show(context);
+    message: "Notification Message",
+    mode: "ADVANCE",
+    duration: Duration(seconds: 5),
+    bgColor: Colors.red,
+    textColor: Colors.black,
+    iconColor: Colors.black,).show(context);
 ```
 
 
@@ -92,15 +94,15 @@ AdvanceSnackBar(
 ///Advance mode :- Example 4
 // With this example you can change textSize or show notification icon
 AdvanceSnackBar(
-                message: "Notification Message",
-                mode: "ADVANCE",
-                duration: Duration(seconds: 5),
-                bgColor: Colors.red,
-                textColor: Colors.white,
-                iconColor: Colors.white,
-                textSize: 22,
-                isIcon: true,
-            ).show(context);
+        message: "Notification Message",
+        mode: "ADVANCE",
+        duration: Duration(seconds: 5),
+        bgColor: Colors.red,
+        textColor: Colors.white,
+        iconColor: Colors.white,
+        textSize: 22,
+        isIcon: true,
+    ).show(context);
 
 ```
 
@@ -109,13 +111,13 @@ AdvanceSnackBar(
 ///Advance mode :- Example 5
 /// Every type has owen icon you can show and hode with isIcon
 AdvanceSnackBar(
-                message: "Notification Message",
-                mode: "ADVANCE",
-                duration: Duration(seconds: 5),
-                type: "ERROR",
-                textSize: 20,
-                isIcon: true,// it shold be after text
-            ).show(context);
+        message: "Notification Message",
+        mode: "ADVANCE",
+        duration: Duration(seconds: 5),
+        type: "ERROR",
+        textSize: 20,
+        isIcon: true,// it shold be after text
+    ).show(context);
 ```
 
 
@@ -123,14 +125,14 @@ AdvanceSnackBar(
 ///Advance mode :- Example 6
 ///Change type icon position
 AdvanceSnackBar(
-                message: "Notification Message",
-                mode: "ADVANCE",
-                duration: Duration(seconds: 5),
-                type: "ERROR",
-                textSize: 20,
-                isIcon: true,
-                iconPosition: "RIGHT",
-            ).show(context);
+        message: "Notification Message",
+        mode: "ADVANCE",
+        duration: Duration(seconds: 5),
+        type: "ERROR",
+        textSize: 20,
+        isIcon: true,
+        iconPosition: "RIGHT",
+    ).show(context);
 ```
 
 
@@ -138,14 +140,14 @@ AdvanceSnackBar(
 ///Advance mode :- Example 7
 /// You can also add tittle 
 AdvanceSnackBar(
-                message: "Notification Message",
-                tittle: "Tittle message",
-                mode: "ADVANCE",
-                type: "ERROR",
-                textSize: 20,
-                isIcon: true,
-                closeIconPosition: "LEFT", 
-            ).show(context);
+        message: "Notification Message",
+        tittle: "Tittle message",
+        mode: "ADVANCE",
+        type: "ERROR",
+        textSize: 20,
+        isIcon: true,
+        closeIconPosition: "LEFT", 
+    ).show(context);
 
 ```
 
@@ -154,15 +156,15 @@ AdvanceSnackBar(
 ///Advance mode :- Example 7
 /// You can change devider color (hr line)
 AdvanceSnackBar(
-                message: "Notification Message",
-                tittle: "Tittle message",
-                mode: "ADVANCE",
-                type: "ERROR",
-                textSize: 20,
-                isIcon: true,
-                deviderColor: Colors.red,
-                closeIconPosition: "LEFT", 
-            ).show(context);
+        message: "Notification Message",
+        tittle: "Tittle message",
+        mode: "ADVANCE",
+        type: "ERROR",
+        textSize: 20,
+        isIcon: true,
+        deviderColor: Colors.red,
+        closeIconPosition: "LEFT", 
+    ).show(context);
 
 ```
 
