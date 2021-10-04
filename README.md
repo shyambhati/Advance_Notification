@@ -17,7 +17,7 @@ The Snackbar handling
 
 Advance Notification have three mode in Snackbar  BASIC,ADVANCE,MODERN
 
-#### Basic Mode
+### Basic Mode
 
 You can use basic Snackbar with background color, text color, position
 
