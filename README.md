@@ -173,48 +173,49 @@ AdvanceSnackBar(
 ///Advance mode :- Example 7
 ///with child you can add a extra widgets it can be button, icon, image, etc..
 AdvanceSnackBar(
-                message: "Notification Message ",
-                mode: "ADVANCE",
-                type: "PRIMARY",
-                tittle: "Tittle message",
-                iconPosition: "RIGHT",
-                child: Padding(
-                    padding: const EdgeInsets.only(left: 2),
-                    child: Icon(
-                    Icons.all_inbox,
-                    color: Colors.red,
-                    size: 25,
-                    ),
-                ),
-                isIcon: true)
-            .show(context);
+        message: "Notification Message ",
+        mode: "ADVANCE",
+        type: "PRIMARY",
+        tittle: "Tittle message",
+        iconPosition: "RIGHT",
+        child: Padding(
+            padding: const EdgeInsets.only(left: 2),
+            child: Icon(
+            Icons.all_inbox,
+            color: Colors.red,
+            size: 25,
+            ),
+        ),
+        isIcon: true)
+    .show(context);
 
 ```
 ```dart
 ///Advance mode :- Example 8
 /// You can override onclick function of close button
 AdvanceSnackBar(
-                message: "Notification Message ",
-                mode: "ADVANCE",
-                type: "PRIMARY",
-                onClick: () 
-                {
-                    print("Hello");
-                },
-                isIcon: true).show(context);
+        message: "Notification Message ",
+        mode: "ADVANCE",
+        type: "PRIMARY",
+        onClick: () 
+        {
+            print("Hello");
+        },
+        isIcon: true).show(context);
 
 ```
 
 ### Modern mode 
-Modern mode have all advance mode features nad it have some ne featers. It has a qnique design. 
+Modern mode have all advance mode features nad it have some ne featers. 
+It has a qnique design. 
 You can change advance mode design with add a single word "MODERN".
 in modern mode youcan't change devider color we are working on it.
 
 ```dart
 ///Modern mode :- Example 1
 AdvanceSnackBar(
-                message: "Notification Message",
-                mode: "MODERN",).show(context);
+        message: "Notification Message",
+        mode: "MODERN",).show(context);
 
 ```
 
@@ -222,29 +223,29 @@ AdvanceSnackBar(
 ///Modern mode :- Example 2
 // You can change the type like advance mode
 AdvanceSnackBar(
-                message: "Notification Message",
-                mode: "MODERN",type: "WARNING")).show(context);
+        message: "Notification Message",
+        mode: "MODERN",type: "WARNING")).show(context);
 ```
 
 ```dart
 ///Modern mode :- Example 3
 AdvanceSnackBar(
-                message: "Notification Message",
-                mode: "MODERN",
-                type: "ERROR",
-                isIcon: true)
-            .show(context);
+        message: "Notification Message",
+        mode: "MODERN",
+        type: "ERROR",
+        isIcon: true)
+    .show(context);
 ```
 
 ```dart
 ///Modern mode :- Example 3
 AdvanceSnackBar(
-                message: "Notification Message content",
-                mode: "MODERN",
-                type: "ERROR",
-                tittle: "Tittle message",
-                isIcon: true)
-            .show(context);
+        message: "Notification Message content",
+        mode: "MODERN",
+        type: "ERROR",
+        tittle: "Tittle message",
+        isIcon: true)
+    .show(context);
 
 ```
 
