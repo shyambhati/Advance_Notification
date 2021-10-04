@@ -254,10 +254,26 @@ AdvanceSnackBar(
 ```
 
 
-| Prop            | Mode            |  Type      | Description/Purpose                            | Default |
-| :---------------| :-------------: | :-------:  | :--------------------------------------------: | :------ |
-| tittle          | Advance,Modern  |`String`    |it is for notification tittle                   | ""      |
-| message         | All             | 'String'   |it is for notification Message                  | ""     |
+| Prop              | Mode            |  Type     | Description/Purpose                | Default     | Required |
+| :-----------------| :-------------: | :-------: | :--------------------------------: | :---------- |:------   |
+| tittle            | Advance,Modern  |`String`   |it is for notification tittle       | ""          |  NO      |
+| message           | All             |`String`   |it is for notification Message      | ""          |  YES     |
+| duration          | Advance,Modern  |`Duration` |Duration of notification hide         | "Duration(seconds: 4)"          |  NO      |
+| isIcon            | Advance,Modern  |`String`   |icon show in advance and modern                  | false          |  NO      |
+| isFixed           | Basic           |`bool`     |it will work in basic mode only                   | ""          |  true      |
+| isClosable        | Advance,Modern  |`bool`     |hide/show close icon                  | true          |  NO      |
+| isDevider         | Advance,Modern  |`bool`     |it will show when you add tittle                   | true          |  NO      |
+| isChildLeft       | Advance,Modern  |`bool`   |it swap close icon and child widget left to right                   | true          |  NO      |
+| type              | Advance,Modern  |`String`   |                   | PRIMARY, SECONDARY, LIGHT, DARK, SUCCESS, INFO, WARNING, ERROR          |  NO      |
+| mode              |  |`String`   |BASIC, ADVANCE, MODERN                   | BASIC          |  NO      |
+| iconPosition      | Advance,Modern  |`String`   |it is for notification tittle                   | NORMAL          |  NO      |
+| closeIconPosition | Advance,Modern  |`String`   |it is for notification tittle                   | NORMAL          |  NO      |
+| onClick           | Advance,Modern  |`function` |it is for notification tittle                   | ""          |  NO      |
+| icon              | Advance,Modern  |`widget`   |it is for notification tittle                   | ""          |  NO      |
+| child             | Advance,Modern  |`widget`   |it is for notification tittle                   | ""          |  NO      |
+| borderRadius      | Advance,Modern  |`double`   |it is for notification tittle                   | 10          |  NO      |
+| mHeight           | Advance,Modern  |`double`   |it is for notification tittle                   | 40          |  NO      |
+
 
 ## Bugs or Requests
 If you encounter any problems feel free to open an [issue](https://github.com/aagarwal1012/Animated-Text-Kit/issues/new?assignees=&labels=&template=bug_report.md). If you feel the library is missing a [feature](https://github.com/aagarwal1012/Animated-Text-Kit/issues/new?assignees=&labels=&template=feature_request.md), please raise a ticket on GitHub and I'll look into it. Pull request are also welcome.
