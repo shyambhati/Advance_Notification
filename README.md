@@ -20,6 +20,8 @@ Advance Notification have three mode in  Advance Notification Snackbar =>  BASIC
 
 You can use basic Snackbar with background color, text color, position
 
+<img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/basic.gif?raw=true" align = "right" height = "300px">
+
 ```dart
 ///For Basic mode you don't need to write mode
 AdvanceSnackBar(message: "Hello...").show(context);
