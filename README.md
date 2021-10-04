@@ -20,7 +20,7 @@ Advance Notification have three mode in  Advance Notification Snackbar =>  BASIC
 
 You can use basic Snackbar with background color, text color, position
 
-<img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/basic.gif?raw=true" align = "right" weight="300" height = "400px">
+<img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/basic.gif?raw=true" align = "right" width="300px" height = "600px">
 
 ```dart
 ///For Basic mode you don't need to write mode
@@ -58,7 +58,7 @@ AdvanceSnackBar(
 You can use Advance mode Snackbar with many features. it has close default close button.
 you can override the close button event or color  and icon image. 
 
-<img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/advance.gif?raw=true" align = "right" weight="300" height = "500px">
+<img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/advance.gif?raw=true" align = "right" width="300px" height = "600px">
 ```dart
 /// Advance mode :- Example 1
 /// Advance mode have many 
