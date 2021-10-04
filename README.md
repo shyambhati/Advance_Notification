@@ -58,6 +58,7 @@ AdvanceSnackBar(
 You can use Advance mode Snackbar with many features. it has close default close button.
 you can override the close button event or color  and icon image. 
 
+<img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/advance.gif?raw=true" align = "right" weight="300" height = "500px">
 ```dart
 /// Advance mode :- Example 1
 /// Advance mode have many 
@@ -69,7 +70,9 @@ you can override the close button event or color  and icon image.
 
 ```dart
 ///Advance mode :- Example 2
-/// You can add your custom duration for hide notification. default duration is 4 seconds. We have multiple types in Advance mode like : PRIMARY,SECONDARY,LIGHT,DARK,SUCCESS,INFO,WARNING,ERROR default type is SUCCESS
+/// You can add your custom duration for hide notification. default duration is 4 seconds. 
+// We have multiple types in Advance mode like : PRIMARY,SECONDARY,LIGHT,DARK,SUCCESS,INFO,WARNING,ERROR 
+//default type is SUCCESS
 
 AdvanceSnackBar(
     message: "Notification Message",
@@ -211,6 +214,7 @@ It has a qnique design.
 You can change advance mode design with add a single word "MODERN".
 in modern mode youcan't change devider color we are working on it.
 
+<img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/modern.gif?raw=true" align = "right" weight="300" height = "300px">
 ```dart
 ///Modern mode :- Example 1
 AdvanceSnackBar(
