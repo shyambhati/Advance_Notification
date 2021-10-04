@@ -254,5 +254,5 @@ AdvanceSnackBar(
 ```
 
 ## Bugs or Requests
-If you encounter any problems feel free to open an issue. If you feel the library is missing a feature, please raise a ticket on GitHub and I'll look into it. Pull request are also welcome.
+If you encounter any problems feel free to open an [issue](https://github.com/aagarwal1012/Animated-Text-Kit/issues/new?assignees=&labels=&template=bug_report.md). If you feel the library is missing a [feature](https://github.com/aagarwal1012/Animated-Text-Kit/issues/new?assignees=&labels=&template=feature_request.md), please raise a ticket on GitHub and I'll look into it. Pull request are also welcome.
 
