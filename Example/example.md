@@ -236,7 +236,7 @@ class _NotificationDemoState extends State<NotificationDemo> {
 }
 
 
-/// Ebutton is a custom ElevatedButton widget
+/// Ebutton is a custom ElevatedButton widget.
 class Ebutton extends StatelessWidget {
   final String text;
   final Color color;
