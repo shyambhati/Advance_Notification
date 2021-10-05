@@ -72,9 +72,9 @@ AdvanceSnackBar(message: "Hello...").show(context);
 
 
 #### 1.2 => Example
+**Note:** Basic with background color or text color.
 
 ```dart
-// Basic with background color or text color.
 AdvanceSnackBar(
     message: "Notification Message",
     bgColor: Colors.tealAccent,
@@ -83,9 +83,8 @@ AdvanceSnackBar(
 
 
 #### 1.3 => Example
-
+**Note:** Basic with background color or text  or fixed position.
 ```dart
-/// Basic with background color or text  or fixed position.
 AdvanceSnackBar(
     message: "Notification Message",
     bgColor: Colors.tealAccent,
@@ -121,8 +120,9 @@ AdvanceSnackBar(
 ```
 
 #### 2.3 => Example
+**Note:** Change bgColor, text color close iconColor.
+
 ```dart
-/// Change bgColor, text color close iconColor .
 AdvanceSnackBar(
     message: "Notification Message",
     mode: "ADVANCE",
@@ -133,8 +133,9 @@ AdvanceSnackBar(
 ```
 
 #### 2.4 => Example
+**Note:** With this example you can change textSize or show notification icon.
+
 ```dart
-/// With this example you can change textSize or show notification icon.
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "ADVANCE",
@@ -149,8 +150,8 @@ AdvanceSnackBar(
 ```
 
 #### 2.5 => Example
+**Note:** Every type has own icon you can show and hide with isIcon.
 ```dart
-/// Every type has own icon you can show and hide with isIcon.
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "ADVANCE",
@@ -162,8 +163,8 @@ AdvanceSnackBar(
 ```
 
 #### 2.6 => Example
+**Note:** Change type icon position.
 ```dart
-/// Change type icon position.
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "ADVANCE",
@@ -176,8 +177,8 @@ AdvanceSnackBar(
 ```
 
 #### 2.7 => Example
+**Note:** You can also add tittle.
 ```dart
-/// You can also add tittle.
 AdvanceSnackBar(
         message: "Notification Message",
         tittle: "Tittle message",
@@ -191,8 +192,9 @@ AdvanceSnackBar(
 ```
 
 #### 2.8 => Example
+**Note:** You can change divider color (hr line).
 ```dart
-/// You can change divider color (hr line).
+
 AdvanceSnackBar(
         message: "Notification Message",
         tittle: "Tittle message",
@@ -207,8 +209,8 @@ AdvanceSnackBar(
 ```
 
 #### 2.9 => Example
+**Note:** With child you can add an extra widgets it can be a button, icon, image, etc.
 ```dart
-/// With child you can add an extra widgets it can be a button, icon, image, etc.
 AdvanceSnackBar(
         message: "Notification Message ",
         mode: "ADVANCE",
@@ -228,8 +230,9 @@ AdvanceSnackBar(
 ```
 
 #### 2.10 => Example
+**Note:** You can override onclick function of close button.
+
 ```dart
-/// You can override onclick function of close button.
 AdvanceSnackBar(
         message: "Notification Message ",
         mode: "ADVANCE",
@@ -259,8 +262,9 @@ AdvanceSnackBar(
 ```
 #### 3.2 => Example
 
+**Note:** You can change the type like advance mode.
+
 ```dart
-/// You can change the type like advance mode.
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "MODERN",type: "WARNING")).show(context);
