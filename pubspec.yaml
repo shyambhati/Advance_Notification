@@ -1,7 +1,8 @@
 name: advance_notification
 description: Advance Notification package for Snackbar and alert.
-version: 0.0.1
-homepage:https://github.com/shyambhati/Advance_Notification
+version: 1.0.1
+author: Shyam Kumar <shyambhati97@gmail.com>
+homepage: https://github.com/shyambhati/Advance_Notification
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

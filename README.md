@@ -1,11 +1,11 @@
-# Advance Notification
+# Advance_Notification
 
-Advance Notification is a Flutter package with custom snackabar.
+Advance_Notification is a Flutter package with custom snackabar.
 
 
 ## Development is continue
 
-- There are **many new features planned** for Advance Notification.
+- There are **many new features planned** for Advance_Notification.
 
 
 
