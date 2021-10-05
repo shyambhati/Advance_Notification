@@ -51,6 +51,8 @@ Advance Notification have three mode in  Advance Notification Snackbar =>  BASIC
 
 ### 1: Basic Mode
 
+<hr>
+
 You can use basic Snackbar with background color, text color, position
 
 <img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/basic.gif?raw=true" align = "right" width="300px" height = "600px">
