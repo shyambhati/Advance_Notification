@@ -49,12 +49,13 @@ The Advance Notification provide light weight you can use Multiple design of Sna
 
 Advance Notification have three mode in  Advance Notification Snackbar =>  BASIC,ADVANCE,MODERN.
 
-### Basic Mode
+### 1: Basic Mode
 
 You can use basic Snackbar with background color, text color, position
 
 <img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/basic.gif?raw=true" align = "right" width="300px" height = "600px">
 
+#### 1.1 => Example
 ```dart
 ///For Basic mode you don't need to write mode
 AdvanceSnackBar(message: "Hello...").show(context);
@@ -68,6 +69,8 @@ AdvanceSnackBar(message: "Hello...").show(context);
 ```
 
 
+#### 1.2 => Example
+
 ```dart
 ///Basic with background color or text color
 AdvanceSnackBar(
@@ -76,6 +79,8 @@ AdvanceSnackBar(
     textColor: Colors.red).show(context);
 ```
 
+
+#### 1.3 => Example
 
 ```dart
 ///Basic with background color or text  or fixed position
@@ -86,12 +91,15 @@ AdvanceSnackBar(
     isFixed: false).show(context);
 ```
 
-### Advance mode 
+### 2: Advance mode 
 
 You can use Advance mode Snackbar with many features. it has close default close button.
 you can override the close button event or color  and icon image. 
 
 <img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/advance.gif?raw=true" align = "right" width="300px" height = "600px">
+
+#### 2.1 => Example
+
 ```dart
 /// Advance mode :- Example 1
 /// Advance mode have many 
