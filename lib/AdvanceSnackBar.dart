@@ -205,7 +205,6 @@ class AdvanceSnackBar {
   }
 
   __generateBgColor() {
-    // https://backstrap.net/colors.html
     String c = Color(0xFF323232).toString();
     if (bgColor.toString() != c)
       return bgColor;

@@ -46,7 +46,7 @@ import 'package:smart_notification/smart_notification.dart';
 The Advance_Notification provide multiple design of snackbar notification.
 ### Examples
 
-Advance_Notification have three mode in  Advance_Notification snackbar =>  BASIC,ADVANCE,MODERN.
+Advance_Notification have three mode in snackbar =>  BASIC,ADVANCE,MODERN.
 
 ### 1: Basic Mode
 
@@ -73,7 +73,7 @@ AdvanceSnackBar(message: "Hello...").show(context);
 #### 1.2 => Example
 
 ```dart
-// Basic with background color or text color
+/// Basic with background color or text color
 AdvanceSnackBar(
     message: "Notification Message",
     bgColor: Colors.tealAccent,
@@ -84,7 +84,7 @@ AdvanceSnackBar(
 #### 1.3 => Example
 
 ```dart
-// Basic with background color or text  or fixed position
+/// Basic with background color or text  or fixed position
 AdvanceSnackBar(
     message: "Notification Message",
     bgColor: Colors.tealAccent,
@@ -110,9 +110,7 @@ You can override the close button event, color and icon image.
 #### 2.2 => Example
 
 ```dart
-// You can add your custom duration for hide notification. default duration is 4 seconds. 
-// We have multiple types in Advance mode like : PRIMARY,SECONDARY,LIGHT,DARK,SUCCESS,INFO,WARNING,ERROR 
-// default type is SUCCESS
+/// You can add your custom duration for hide notification. default duration is 4 seconds. We have multiple types in Advance mode like : PRIMARY,SECONDARY,LIGHT,DARK,SUCCESS,INFO,WARNING,ERROR,default type is SUCCESS
 
 AdvanceSnackBar(
     message: "Notification Message",
@@ -122,7 +120,7 @@ AdvanceSnackBar(
 
 #### 2.3 => Example
 ```dart
-// Change bgColor , text color close iconColor 
+/// Change bgColor , text color close iconColor 
 AdvanceSnackBar(
     message: "Notification Message",
     mode: "ADVANCE",
@@ -134,7 +132,7 @@ AdvanceSnackBar(
 
 #### 2.4 => Example
 ```dart
-// With this example you can change textSize or show notification icon
+/// With this example you can change textSize or show notification icon
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "ADVANCE",
@@ -150,7 +148,7 @@ AdvanceSnackBar(
 
 #### 2.5 => Example
 ```dart
-// Every type has owen icon you can show and hode with isIcon
+/// Every type has own icon you can show and hide with isIcon
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "ADVANCE",
@@ -163,7 +161,7 @@ AdvanceSnackBar(
 
 #### 2.6 => Example
 ```dart
-// Change type icon position
+/// Change type icon position
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "ADVANCE",
@@ -177,7 +175,7 @@ AdvanceSnackBar(
 
 #### 2.7 => Example
 ```dart
-// You can also add tittle 
+/// You can also add tittle 
 AdvanceSnackBar(
         message: "Notification Message",
         tittle: "Tittle message",
@@ -192,7 +190,7 @@ AdvanceSnackBar(
 
 #### 2.8 => Example
 ```dart
-// You can change divider color (hr line)
+/// You can change divider color (hr line)
 AdvanceSnackBar(
         message: "Notification Message",
         tittle: "Tittle message",
@@ -208,7 +206,7 @@ AdvanceSnackBar(
 
 #### 2.9 => Example
 ```dart
-// with child you can add an extra widgets it can be a button, icon, image, etc.
+/// with child you can add an extra widgets it can be a button, icon, image, etc.
 AdvanceSnackBar(
         message: "Notification Message ",
         mode: "ADVANCE",
@@ -229,7 +227,7 @@ AdvanceSnackBar(
 
 #### 2.10 => Example
 ```dart
-// You can override onclick function of close button
+/// You can override onclick function of close button
 AdvanceSnackBar(
         message: "Notification Message ",
         mode: "ADVANCE",
@@ -260,7 +258,7 @@ AdvanceSnackBar(
 #### 3.2 => Example
 
 ```dart
-// You can change the type like advance mode
+/// You can change the type like advance mode
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "MODERN",type: "WARNING")).show(context);
@@ -278,7 +276,7 @@ AdvanceSnackBar(
 
 #### 3.4 => Example
 ```dart
-// Modern mode :- Example 3
+/// Modern mode :- Example 3
 AdvanceSnackBar(
         message: "Notification Message content",
         mode: "MODERN",
@@ -289,6 +287,7 @@ AdvanceSnackBar(
 
 ```
 <hr>
+
 ### The component takes 1 compulsory prop - message. Other props are optional. The table below explains more.
 
 | Prop              | Mode            |  Type     | Description/Purpose                | Default     | Required |

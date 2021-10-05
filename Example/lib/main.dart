@@ -1,10 +1,5 @@
-
-# 📝 Examples
-
-```dart
+import 'package:advance_notification/advance_notification.dart';
 import 'package:flutter/material.dart';
-import 'package:smart_notification/smart_notification.dart';
-
 
 class NotificationDemo extends StatefulWidget {
   const NotificationDemo({Key? key}) : super(key: key);
@@ -14,7 +9,6 @@ class NotificationDemo extends StatefulWidget {
 }
 
 class _NotificationDemoState extends State<NotificationDemo> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -235,7 +229,6 @@ class _NotificationDemoState extends State<NotificationDemo> {
   }
 }
 
-
 /// Ebutton is a custom ElevatedButton widget
 class Ebutton extends StatelessWidget {
   final String text;
@@ -261,6 +254,3 @@ class Ebutton extends StatelessWidget {
     );
   }
 }
-
-
-```
