@@ -1,3 +1,4 @@
-## 0.0.1
+## 1.0.1
 
-* TODO: Describe initial release.
+-- Initial Release.
+-- There are **many new features planned** for Advance_Notification.
