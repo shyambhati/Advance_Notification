@@ -7,7 +7,40 @@ advance_notification is a Flutter package with Custom Snackabar.
 
 - There are **many new features planed** for Advance Notification.
 
-## Getting Started
+
+
+# Installing
+
+### 1. Depend on it
+Add this to your package's `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  smart_notification: <latest_version>
+```
+
+
+### 2. Install it
+
+You can install packages from the command line:
+
+Run this command: 
+With Flutter:
+
+
+```yaml
+flutter pub add smart_notification
+```
+
+### 3. Import it
+
+Now in your `Dart` code, you can use:
+
+```dart
+import 'package:smart_notification/smart_notification.dart';
+```
+
+## Getting Started || Usage
 
 ### Why Advance Notification
 
