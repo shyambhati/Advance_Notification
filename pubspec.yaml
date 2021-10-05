@@ -1,6 +1,6 @@
 name: advance_notification
 description: Advance Notification package for Snackbar and alert. Advance Notification snackbar have three mode BASIC,ADVANCE,MODERN and all provide a unique design with null safety. You no need to write extra code for use snackbar in flutter.
-version: 1.0.1
+version: 1.0.2
 author: Shyam Kumar <shyambhati97@gmail.com>
 homepage: https://github.com/shyambhati/Advance_Notification
 maintainer: Shyam Kumar <shyambhati97@gmail.com>
