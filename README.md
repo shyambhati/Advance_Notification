@@ -57,12 +57,12 @@ You can use basic Snackbar with background color, text color, position
 
 #### 1.1 => Example
 ```dart
-///For Basic mode you don't need to write mode
+// For Basic mode you don't need to write mode
 AdvanceSnackBar(message: "Hello...").show(context);
 ```
 
 ```dart
-///Basic with Background color
+// Basic with Background color
  AdvanceSnackBar(
      message: "Notification Message", 
      bgColor: Colors.blueAccent).show(context);
@@ -72,7 +72,7 @@ AdvanceSnackBar(message: "Hello...").show(context);
 #### 1.2 => Example
 
 ```dart
-///Basic with background color or text color
+// Basic with background color or text color
 AdvanceSnackBar(
     message: "Notification Message",
     bgColor: Colors.tealAccent,
@@ -83,7 +83,7 @@ AdvanceSnackBar(
 #### 1.3 => Example
 
 ```dart
-///Basic with background color or text  or fixed position
+// Basic with background color or text  or fixed position
 AdvanceSnackBar(
     message: "Notification Message",
     bgColor: Colors.tealAccent,
@@ -109,9 +109,9 @@ you can override the close button event or color  and icon image.
 #### 2.2 => Example
 
 ```dart
-/// You can add your custom duration for hide notification. default duration is 4 seconds. 
+// You can add your custom duration for hide notification. default duration is 4 seconds. 
 // We have multiple types in Advance mode like : PRIMARY,SECONDARY,LIGHT,DARK,SUCCESS,INFO,WARNING,ERROR 
-//default type is SUCCESS
+// default type is SUCCESS
 
 AdvanceSnackBar(
     message: "Notification Message",
@@ -121,7 +121,7 @@ AdvanceSnackBar(
 
 #### 2.3 => Example
 ```dart
-/// Change bgColor , text color close iconColor 
+// Change bgColor , text color close iconColor 
 AdvanceSnackBar(
     message: "Notification Message",
     mode: "ADVANCE",
@@ -149,8 +149,7 @@ AdvanceSnackBar(
 
 #### 2.5 => Example
 ```dart
-///Advance mode :- Example 5
-/// Every type has owen icon you can show and hode with isIcon
+// Every type has owen icon you can show and hode with isIcon
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "ADVANCE",
@@ -163,7 +162,7 @@ AdvanceSnackBar(
 
 #### 2.6 => Example
 ```dart
-///Change type icon position
+// Change type icon position
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "ADVANCE",
@@ -177,7 +176,7 @@ AdvanceSnackBar(
 
 #### 2.7 => Example
 ```dart
-/// You can also add tittle 
+// You can also add tittle 
 AdvanceSnackBar(
         message: "Notification Message",
         tittle: "Tittle message",
@@ -192,7 +191,7 @@ AdvanceSnackBar(
 
 #### 2.8 => Example
 ```dart
-/// You can change devider color (hr line)
+// You can change devider color (hr line)
 AdvanceSnackBar(
         message: "Notification Message",
         tittle: "Tittle message",
@@ -278,7 +277,7 @@ AdvanceSnackBar(
 
 #### 3.4 => Example
 ```dart
-///Modern mode :- Example 3
+// Modern mode :- Example 3
 AdvanceSnackBar(
         message: "Notification Message content",
         mode: "MODERN",
