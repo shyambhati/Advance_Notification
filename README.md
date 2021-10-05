@@ -57,13 +57,14 @@ You can use basic snackbar with background color, text color, position
 <img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/basic.gif?raw=true" align = "right" width="300px" height = "600px">
 
 #### 1.1 => Example
+**Note:** For basic mode you don't need to write mode.
 ```dart
-// For basic mode you don't need to write mode.
 AdvanceSnackBar(message: "Hello...").show(context);
 ```
 
+
+**Note:** Basic with background color.
 ```dart
-// Basic with background color.
  AdvanceSnackBar(
      message: "Notification Message", 
      bgColor: Colors.blueAccent).show(context);
