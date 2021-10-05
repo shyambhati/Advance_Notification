@@ -101,16 +101,14 @@ you can override the close button event or color  and icon image.
 #### 2.1 => Example
 
 ```dart
-/// Advance mode :- Example 1
-/// Advance mode have many 
  AdvanceSnackBar(
      message: "Notification Message",
      mode: "ADVANCE",).show(context);
 ```
 
+#### 2.2 => Example
 
 ```dart
-///Advance mode :- Example 2
 /// You can add your custom duration for hide notification. default duration is 4 seconds. 
 // We have multiple types in Advance mode like : PRIMARY,SECONDARY,LIGHT,DARK,SUCCESS,INFO,WARNING,ERROR 
 //default type is SUCCESS
@@ -121,8 +119,8 @@ AdvanceSnackBar(
     duration: Duration(seconds: 5),).show(context);
 ```
 
+#### 2.3 => Example
 ```dart
-///Advance mode :- Example 3
 /// Change bgColor , text color close iconColor 
 AdvanceSnackBar(
     message: "Notification Message",
@@ -133,9 +131,8 @@ AdvanceSnackBar(
     iconColor: Colors.black,).show(context);
 ```
 
-
+#### 2.4 => Example
 ```dart
-///Advance mode :- Example 4
 // With this example you can change textSize or show notification icon
 AdvanceSnackBar(
         message: "Notification Message",
@@ -150,7 +147,7 @@ AdvanceSnackBar(
 
 ```
 
-
+#### 2.5 => Example
 ```dart
 ///Advance mode :- Example 5
 /// Every type has owen icon you can show and hode with isIcon
@@ -164,9 +161,8 @@ AdvanceSnackBar(
     ).show(context);
 ```
 
-
+#### 2.6 => Example
 ```dart
-///Advance mode :- Example 6
 ///Change type icon position
 AdvanceSnackBar(
         message: "Notification Message",
@@ -179,9 +175,8 @@ AdvanceSnackBar(
     ).show(context);
 ```
 
-
+#### 2.7 => Example
 ```dart
-///Advance mode :- Example 7
 /// You can also add tittle 
 AdvanceSnackBar(
         message: "Notification Message",
@@ -195,9 +190,8 @@ AdvanceSnackBar(
 
 ```
 
-
+#### 2.8 => Example
 ```dart
-///Advance mode :- Example 7
 /// You can change devider color (hr line)
 AdvanceSnackBar(
         message: "Notification Message",
@@ -212,10 +206,9 @@ AdvanceSnackBar(
 
 ```
 
-
+#### 2.9 => Example
 ```dart
-///Advance mode :- Example 7
-///with child you can add a extra widgets it can be button, icon, image, etc..
+// with child you can add a extra widgets it can be button, icon, image, etc..
 AdvanceSnackBar(
         message: "Notification Message ",
         mode: "ADVANCE",
@@ -232,11 +225,11 @@ AdvanceSnackBar(
         ),
         isIcon: true)
     .show(context);
-
 ```
+
+#### 2.10 => Example
 ```dart
-///Advance mode :- Example 8
-/// You can override onclick function of close button
+// You can override onclick function of close button
 AdvanceSnackBar(
         message: "Notification Message ",
         mode: "ADVANCE",
@@ -249,31 +242,32 @@ AdvanceSnackBar(
 
 ```
 
-### Modern mode 
+### 3: Modern mode 
 Modern mode have all advance mode features nad it have some ne featers. 
 It has a qnique design. 
 You can change advance mode design with add a single word "MODERN".
 in modern mode youcan't change devider color we are working on it.
 
 <img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/modern.gif?raw=true" align = "right" width="300px" height = "600px">
+
+#### 3.1 => Example
 ```dart
-///Modern mode :- Example 1
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "MODERN",).show(context);
 
 ```
+#### 3.2 => Example
 
 ```dart
-///Modern mode :- Example 2
 // You can change the type like advance mode
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "MODERN",type: "WARNING")).show(context);
 ```
 
+#### 3.3 => Example
 ```dart
-///Modern mode :- Example 3
 AdvanceSnackBar(
         message: "Notification Message",
         mode: "MODERN",
@@ -282,6 +276,7 @@ AdvanceSnackBar(
     .show(context);
 ```
 
+#### 3.4 => Example
 ```dart
 ///Modern mode :- Example 3
 AdvanceSnackBar(
@@ -293,7 +288,7 @@ AdvanceSnackBar(
     .show(context);
 
 ```
-
+### The component takes 1 compulsory prop - message. Other props are optional. The table below explains more.
 
 | Prop              | Mode            |  Type     | Description/Purpose                | Default     | Required |
 | :-----------------| :-------------: | :-------: | :--------------------------------: | :---------- |:------   |
