@@ -1,6 +1,6 @@
-# advance_notification
+# Advance Notification
 
-advance_notification is a Flutter package with Custom Snackabar.
+Advance Notification is a Flutter package with custom snackabar.
 
 
 ## Development is continue
@@ -24,8 +24,7 @@ dependencies:
 
 You can install packages from the command line:
 
-Run this command: 
-With Flutter:
+Run this command with flutter:
 
 
 ```yaml
@@ -44,7 +43,7 @@ import 'package:smart_notification/smart_notification.dart';
 
 ### Why Advance Notification
 
-The Advance Notification provide light weight you can use Multiple design of Snackbar notification.
+The Advance Notification provide multiple design of Snackbar notification.
 ### Examples
 
 Advance Notification have three mode in  Advance Notification Snackbar =>  BASIC,ADVANCE,MODERN.
@@ -95,8 +94,8 @@ AdvanceSnackBar(
 
 ### 2: Advance mode 
 
-You can use Advance mode Snackbar with many features. it has close default close button.
-you can override the close button event or color  and icon image. 
+You can use Advance mode Snackbar with many features. It has default close button.
+You can override the close button event, color and icon image. 
 
 <img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/advance.gif?raw=true" align = "right" width="300px" height = "600px">
 
@@ -209,7 +208,7 @@ AdvanceSnackBar(
 
 #### 2.9 => Example
 ```dart
-// with child you can add a extra widgets it can be button, icon, image, etc..
+// with child you can add an extra widgets it can be a button, icon, image, etc.
 AdvanceSnackBar(
         message: "Notification Message ",
         mode: "ADVANCE",
