@@ -5,7 +5,7 @@ advance_notification is a Flutter package with Custom Snackabar.
 
 ## Development is continue
 
-- There are **many new features planed** for Advance Notification.
+- There are **many new features planned** for Advance Notification.
 
 
 
@@ -193,7 +193,7 @@ AdvanceSnackBar(
 
 #### 2.8 => Example
 ```dart
-// You can change devider color (hr line)
+// You can change divider color (hr line)
 AdvanceSnackBar(
         message: "Notification Message",
         tittle: "Tittle message",
@@ -201,7 +201,7 @@ AdvanceSnackBar(
         type: "ERROR",
         textSize: 20,
         isIcon: true,
-        deviderColor: Colors.red,
+        dividerColor: Colors.red,
         closeIconPosition: "LEFT", 
     ).show(context);
 
@@ -244,10 +244,10 @@ AdvanceSnackBar(
 ```
 
 ### 3: Modern mode 
-Modern mode have all advance mode features nad it have some ne featers. 
-It has a qnique design. 
+Modern mode have all advance mode features and it have some new features. 
+It has a unique design. 
 You can change advance mode design with add a single word "MODERN".
-in modern mode youcan't change devider color we are working on it.
+In modern mode you can't change divider color we are working on it.
 
 <img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/modern.gif?raw=true" align = "right" width="300px" height = "600px">
 
@@ -300,7 +300,7 @@ AdvanceSnackBar(
 | isIcon            | Advance,Modern  |`String`   |icon show in advance and modern                  | false          |  NO      |
 | isFixed           | Basic           |`bool`     |it will work in basic mode only                   | ""          |  true      |
 | isClosable        | Advance,Modern  |`bool`     |hide/show close icon                  | true          |  NO      |
-| isDevider         | Advance,Modern  |`bool`     |it will show when you add tittle                   | true          |  NO      |
+| isDivider         | Advance,Modern  |`bool`     |it will show when you add tittle                   | true          |  NO      |
 | isChildLeft       | Advance,Modern  |`bool`   |it swap close icon and child widget left to right                   | true          |  NO      |
 | type              | Advance,Modern  |`String`   | these are default design of snackbar | PRIMARY, SECONDARY, LIGHT, DARK, SUCCESS, INFO, WARNING, ERROR          |  NO      |
 | mode              |  |`String`   |BASIC, ADVANCE, MODERN                   | BASIC          |  NO      |

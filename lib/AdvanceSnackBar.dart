@@ -15,11 +15,11 @@ class AdvanceSnackBar {
   final Color bgColor;
   final Color textColor;
   final Color iconColor;
-  final Color deviderColor;
+  final Color dividerColor;
   final double tittleSize;
   final double textSize;
   final bool isIcon;
-  final bool isDevider;
+  final bool isDivider;
   final bool isClosable;
   final bool isChildLeft;
 
@@ -38,7 +38,7 @@ class AdvanceSnackBar {
       this.bgColor = const Color(0xFF323232),
       this.textColor = const Color(0xFFffffff),
       this.iconColor = const Color(0xFFffffff),
-      this.deviderColor = Colors.white70,
+      this.dividerColor = Colors.white70,
       this.tittleSize = 18,
       this.textSize = 16,
       this.iconSize = 24.0,
@@ -48,7 +48,7 @@ class AdvanceSnackBar {
       this.isIcon = false,
       this.isFixed = true,
       this.isClosable = true,
-      this.isDevider = true,
+      this.isDivider = true,
       this.isChildLeft = true,
       this.type = "SUCCESS",
       this.mode = "BASIC",
@@ -255,11 +255,11 @@ class AdvanceSnackBar {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 __getText(tittle, tittleSize, FontWeight.bold, 1.0),
-                isDevider
+                isDivider
                     ? Divider(
                         color: mode == "MODERN"
                             ? lighten(Color(int.parse("0xff111111")), .1)
-                            : deviderColor,
+                            : dividerColor,
                         height: 2,
                         thickness: 1.5,
                       )
