@@ -264,15 +264,15 @@ AdvanceSnackBar(
 | isClosable        | Advance,Modern  |`bool`     |hide/show close icon                  | true          |  NO      |
 | isDevider         | Advance,Modern  |`bool`     |it will show when you add tittle                   | true          |  NO      |
 | isChildLeft       | Advance,Modern  |`bool`   |it swap close icon and child widget left to right                   | true          |  NO      |
-| type              | Advance,Modern  |`String`   |                   | PRIMARY, SECONDARY, LIGHT, DARK, SUCCESS, INFO, WARNING, ERROR          |  NO      |
+| type              | Advance,Modern  |`String`   | these are default design of snackbar | PRIMARY, SECONDARY, LIGHT, DARK, SUCCESS, INFO, WARNING, ERROR          |  NO      |
 | mode              |  |`String`   |BASIC, ADVANCE, MODERN                   | BASIC          |  NO      |
-| iconPosition      | Advance,Modern  |`String`   |it is for notification tittle                   | NORMAL          |  NO      |
-| closeIconPosition | Advance,Modern  |`String`   |it is for notification tittle                   | NORMAL          |  NO      |
-| onClick           | Advance,Modern  |`function` |it is for notification tittle                   | ""          |  NO      |
-| icon              | Advance,Modern  |`widget`   |it is for notification tittle                   | ""          |  NO      |
-| child             | Advance,Modern  |`widget`   |it is for notification tittle                   | ""          |  NO      |
-| borderRadius      | Advance,Modern  |`double`   |it is for notification tittle                   | 10          |  NO      |
-| mHeight           | Advance,Modern  |`double`   |it is for notification tittle                   | 40          |  NO      |
+| iconPosition      | Advance,Modern  |`String`   |you can change icon position of types icons     | "LEFT"          |  NO      |
+| closeIconPosition | Advance,Modern  |`String`   |You can also change closeIconPosition           | "RIGHT"          |  NO      |
+| onClick           | Advance,Modern  |`function` |override the closeButton onclick function                   | ""          |  NO      |
+| icon              | Advance,Modern  |`widget`   |you can change icon                   | ""          |  NO      |
+| child             | Advance,Modern  |`widget`   |you can add extra widget                   | ""          |  NO      |
+| borderRadius      | Advance,Modern  |`double`   |can change borderRadius             | 10          |  NO      |
+| mHeight           | Advance,Modern  |`double`   |can change snackbar height                  | 40          |  NO      |
 
 
 ## Bugs or Requests
