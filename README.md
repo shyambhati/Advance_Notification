@@ -43,16 +43,16 @@ import 'package:smart_notification/smart_notification.dart';
 
 ### Why Advance Notification
 
-The Advance Notification provide multiple design of Snackbar notification.
+The Advance_Notification provide multiple design of snackbar notification.
 ### Examples
 
-Advance Notification have three mode in  Advance Notification Snackbar =>  BASIC,ADVANCE,MODERN.
+Advance_Notification have three mode in  Advance_Notification snackbar =>  BASIC,ADVANCE,MODERN.
 
 ### 1: Basic Mode
 
 <hr>
 
-You can use basic Snackbar with background color, text color, position
+You can use basic snackbar with background color, text color, position
 
 <img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/basic.gif?raw=true" align = "right" width="300px" height = "600px">
 
@@ -94,7 +94,7 @@ AdvanceSnackBar(
 
 ### 2: Advance mode 
 
-You can use Advance mode Snackbar with many features. It has default close button.
+You can use advance mode snackbar with many features. It has default close button.
 You can override the close button event, color and icon image. 
 
 <img src="https://github.com/shyambhati/Advance_Notification/blob/main/display/advance.gif?raw=true" align = "right" width="300px" height = "600px">
