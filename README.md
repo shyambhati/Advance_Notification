@@ -289,6 +289,7 @@ AdvanceSnackBar(
     .show(context);
 
 ```
+<hr>
 ### The component takes 1 compulsory prop - message. Other props are optional. The table below explains more.
 
 | Prop              | Mode            |  Type     | Description/Purpose                | Default     | Required |
