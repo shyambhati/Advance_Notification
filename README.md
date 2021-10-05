@@ -296,23 +296,23 @@ AdvanceSnackBar(
 
 | Prop              | Mode            |  Type     | Description/Purpose                | Default     | Required |
 | :-----------------| :-------------: | :-------: | :--------------------------------: | :---------- |:------   |
-| tittle            | Advance,Modern  |`String`   |it is for notification tittle       | ""          |  NO      |
-| message           | All             |`String`   |it is for notification Message      | ""          |  YES     |
-| duration          | Advance,Modern  |`Duration` |Duration of notification hide         | "Duration(seconds: 4)"          |  NO      |
-| isIcon            | Advance,Modern  |`String`   |icon show in advance and modern                  | false          |  NO      |
-| isFixed           | Basic           |`bool`     |it will work in basic mode only                   | ""          |  true      |
-| isClosable        | Advance,Modern  |`bool`     |hide/show close icon                  | true          |  NO      |
-| isDivider         | Advance,Modern  |`bool`     |it will show when you add tittle                   | true          |  NO      |
-| isChildLeft       | Advance,Modern  |`bool`   |it swap close icon and child widget left to right                   | true          |  NO      |
-| type              | Advance,Modern  |`String`   | these are default design of snackbar | PRIMARY, SECONDARY, LIGHT, DARK, SUCCESS, INFO, WARNING, ERROR          |  NO      |
-| mode              |  |`String`   |BASIC, ADVANCE, MODERN                   | BASIC          |  NO      |
-| iconPosition      | Advance,Modern  |`String`   |you can change icon position of types icons     | "LEFT"          |  NO      |
-| closeIconPosition | Advance,Modern  |`String`   |You can also change closeIconPosition           | "RIGHT"          |  NO      |
-| onClick           | Advance,Modern  |`function` |override the closeButton onclick function                   | ""          |  NO      |
-| icon              | Advance,Modern  |`widget`   |you can change icon                   | ""          |  NO      |
-| child             | Advance,Modern  |`widget`   |you can add extra widget                   | ""          |  NO      |
-| borderRadius      | Advance,Modern  |`double`   |can change borderRadius             | 10          |  NO      |
-| mHeight           | Advance,Modern  |`double`   |can change snackbar height                  | 40          |  NO      |
+| tittle            | Advance,Modern  |`String`   |It is for notification tittle.      | ""          |  NO      |
+| message           | All             |`String`   |It is for notification Message.      | ""          |  YES     |
+| duration          | Advance,Modern  |`Duration` |Duration of notification hide.         | "Duration(seconds: 4)"          |  NO      |
+| isIcon            | Advance,Modern  |`String`   |Icon show in advance and modern.                  | false          |  NO      |
+| isFixed           | Basic           |`bool`     |It will work in basic mode only.                   | ""          |  true      |
+| isClosable        | Advance,Modern  |`bool`     |Hide/show close icon.                 | true          |  NO      |
+| isDivider         | Advance,Modern  |`bool`     |It will show when you add tittle.                   | true          |  NO      |
+| isChildLeft       | Advance,Modern  |`bool`   |It swap close icon and child widget left to right.                   | true          |  NO      |
+| type              | Advance,Modern  |`String`   | These are default design of snackbar | PRIMARY, SECONDARY, LIGHT, DARK, SUCCESS, INFO, WARNING, ERROR.          |  NO      |
+| mode              |  |`String`   |BASIC, ADVANCE, MODERN.                   | BASIC          |  NO      |
+| iconPosition      | Advance,Modern  |`String`   |You can change icon position of types icons.     | "LEFT"          |  NO      |
+| closeIconPosition | Advance,Modern  |`String`   |You can also change closeIconPosition.           | "RIGHT"          |  NO      |
+| onClick           | Advance,Modern  |`function` |Override the closeButton onclick function.                   | ""          |  NO      |
+| icon              | Advance,Modern  |`widget`   |You can change icon.                   | ""          |  NO      |
+| child             | Advance,Modern  |`widget`   |You can add extra widget.                   | ""          |  NO      |
+| borderRadius      | Advance,Modern  |`double`   |Can change borderRadius.             | 10          |  NO      |
+| mHeight           | Advance,Modern  |`double`   |Can change snackbar height.                  | 40          |  NO      |
 
 
 ## Bugs or Requests
