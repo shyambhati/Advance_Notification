@@ -31,6 +31,7 @@ class AdvanceSnackBar {
   final Widget? child;
   final double borderRadius;
   final double mHeight;
+  final double margin;
 
   const AdvanceSnackBar(
       {@required this.message = "",
@@ -58,7 +59,9 @@ class AdvanceSnackBar {
       this.icon,
       this.child,
       this.borderRadius = 10,
-      this.mHeight = 40});
+      this.mHeight = 40,
+      this.margin = 20,
+     });
 
   show(
     BuildContext context,
@@ -70,6 +73,7 @@ class AdvanceSnackBar {
                 ? (isFixed ? SnackBarBehavior.fixed : SnackBarBehavior.floating)
                 : SnackBarBehavior.fixed,
             padding: mode != "BASIC" ? new EdgeInsets.all(0) : null,
+            margin: mode != "BASIC" ? EdgeInsets.only(bottom: margin) : null,
             duration: duration,
             backgroundColor: mode != "BASIC" ? Colors.transparent : bgColor,
             content: __genrateBar(context),
@@ -272,6 +276,7 @@ class AdvanceSnackBar {
   __getText(String text, double size, var fontWeight, var opacity) {
     return Text(
       text,
+      overflow: TextOverflow.ellipsis,
       style: TextStyle(
           color: mode == "MODERN"
               ? __generateColor(opacity, textColor)
