@@ -8,9 +8,9 @@ class AdvanceSnackBar {
   final TextAlign textAlign;
 
   final bool isFixed;
-  final String type;
+  final sType type;
 
-  final String mode;
+  final Mode mode;
   final FontWeight fontWeight;
   final Color bgColor;
   final Color textColor;
@@ -24,8 +24,9 @@ class AdvanceSnackBar {
   final bool isChildLeft;
 
   final double iconSize;
-  final String iconPosition;
-  final String closeIconPosition;
+  // final String iconPosition;
+  final IconPosition iconPosition;
+  final IconPosition closeIconPosition;
   final VoidCallback? onClick;
   final Widget? icon;
   final Widget? child;
@@ -33,35 +34,35 @@ class AdvanceSnackBar {
   final double mHeight;
   final double margin;
 
-  const AdvanceSnackBar(
-      {@required this.message = "",
-      this.tittle = "",
-      this.bgColor = const Color(0xFF323232),
-      this.textColor = const Color(0xFFffffff),
-      this.iconColor = const Color(0xFFffffff),
-      this.dividerColor = Colors.white70,
-      this.tittleSize = 18,
-      this.textSize = 16,
-      this.iconSize = 24.0,
-      this.fontWeight = FontWeight.w500,
-      this.textAlign = TextAlign.left,
-      this.duration = const Duration(seconds: 4),
-      this.isIcon = false,
-      this.isFixed = true,
-      this.isClosable = true,
-      this.isDivider = true,
-      this.isChildLeft = true,
-      this.type = "SUCCESS",
-      this.mode = "BASIC",
-      this.iconPosition = "NORMAL",
-      this.closeIconPosition = "NORMAL",
-      this.onClick,
-      this.icon,
-      this.child,
-      this.borderRadius = 10,
-      this.mHeight = 40,
-      this.margin = 20,
-     });
+  const AdvanceSnackBar({
+    this.message = "Advance Snackbar",
+    this.tittle = "",
+    this.bgColor = const Color(0xFF323232),
+    this.textColor = const Color(0xFFffffff),
+    this.iconColor = const Color(0xFFffffff),
+    this.dividerColor = Colors.white70,
+    this.tittleSize = 18,
+    this.textSize = 16,
+    this.iconSize = 24.0,
+    this.fontWeight = FontWeight.w500,
+    this.textAlign = TextAlign.left,
+    this.duration = const Duration(seconds: 4),
+    this.isIcon = false,
+    this.isFixed = true,
+    this.isClosable = true,
+    this.isDivider = true,
+    this.isChildLeft = true,
+    this.type = sType.SUCCESS,
+    this.mode = Mode.BASIC,
+    this.iconPosition = IconPosition.NORMAL,
+    this.closeIconPosition = IconPosition.NORMAL,
+    this.onClick,
+    this.icon,
+    this.child,
+    this.borderRadius = 10,
+    this.mHeight = 40,
+    this.margin = 20,
+  });
 
   show(
     BuildContext context,
@@ -69,13 +70,12 @@ class AdvanceSnackBar {
     ScaffoldMessenger.of(context)
         .showSnackBar(
           SnackBar(
-            behavior: mode == "BASIC"
+            behavior: mode == Mode.BASIC
                 ? (isFixed ? SnackBarBehavior.fixed : SnackBarBehavior.floating)
-                : SnackBarBehavior.fixed,
-            padding: mode != "BASIC" ? new EdgeInsets.all(0) : null,
-            margin: mode != "BASIC" ? EdgeInsets.only(bottom: margin) : null,
+                : SnackBarBehavior.floating,
+            padding: mode != Mode.BASIC ? new EdgeInsets.all(0) : null,
             duration: duration,
-            backgroundColor: mode != "BASIC" ? Colors.transparent : bgColor,
+            backgroundColor: mode != Mode.BASIC ? Colors.transparent : bgColor,
             content: __genrateBar(context),
             elevation: 0,
           ),
@@ -85,15 +85,15 @@ class AdvanceSnackBar {
   }
 
   Widget __genrateBar(context) {
-    return mode != "BASIC"
+    return mode != Mode.BASIC
         ? Container(
-            margin: new EdgeInsets.symmetric(horizontal: 10),
+            margin: new EdgeInsets.symmetric(horizontal: 5),
             child: ClipRRect(
               borderRadius: BorderRadius.all(
-                  Radius.circular(mode == "ADVANCE" ? borderRadius : 0)),
+                  Radius.circular(mode == Mode.ADVANCE ? borderRadius : 0)),
               child: Container(
                 decoration: BoxDecoration(
-                  border: mode == "MODERN"
+                  border: mode == Mode.MODERN
                       ? Border(
                           left: BorderSide(
                             width: 10.0,
@@ -102,7 +102,7 @@ class AdvanceSnackBar {
                           ),
                         )
                       : null,
-                  color: mode == "MODERN"
+                  color: mode == Mode.MODERN
                       ? lighten(__generateBgColor(), .2)
                       : __generateBgColor(),
                 ),
@@ -119,14 +119,14 @@ class AdvanceSnackBar {
                   children: <Widget>[
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      textDirection: closeIconPosition == "LEFT"
+                      textDirection: closeIconPosition == IconPosition.LEFT
                           ? TextDirection.rtl
                           : TextDirection.ltr,
                       children: [
                         Expanded(
                           child: Container(
                             child: Row(
-                              textDirection: iconPosition == "RIGHT"
+                              textDirection: iconPosition == IconPosition.RIGHT
                                   ? TextDirection.rtl
                                   : TextDirection.ltr,
                               mainAxisAlignment: __generatemainAxisAlignment(),
@@ -184,14 +184,14 @@ class AdvanceSnackBar {
   __genrateIcon() {
     var icon = Icons.check_circle;
 
-    if (type == "ERROR")
+    if (type == sType.ERROR)
       icon = Icons.error;
-    else if (type == "WARNING")
+    else if (type == sType.WARNING)
       icon = Icons.warning_rounded;
-    else if (type == "INFO") icon = Icons.info;
+    else if (type == sType.INFO) icon = Icons.info;
     return Icon(
       icon,
-      color: mode == "MODERN"
+      color: mode == Mode.MODERN
           ? __generateBgColor()
           : __generateColor(1.0, iconColor),
       size: tittle == "" ? iconSize : iconSize + 10,
@@ -212,34 +212,34 @@ class AdvanceSnackBar {
     String c = Color(0xFF323232).toString();
     if (bgColor.toString() != c)
       return bgColor;
-    else if (type == "DARK")
+    else if (type == sType.DARK)
       c = "161c2d";
-    else if (type == "ERROR")
+    else if (type == sType.ERROR)
       c = "df4759";
-    else if (type == "WARNING")
+    else if (type == sType.WARNING)
       c = "ffc107";
-    else if (type == "INFO")
+    else if (type == sType.INFO)
       c = "467fd0";
-    else if (type == "PRIMARY")
+    else if (type == sType.PRIMARY)
       c = "7c69ef";
-    else if (type == "SECONDARY")
+    else if (type == sType.SECONDARY)
       c = "d9e2ef";
-    else if (type == "LIGHT")
+    else if (type == sType.LIGHT)
       c = "f1f4f8";
-    else if (type == "SUCCESS")
+    else if (type == sType.SUCCESS)
       c = "42ba96";
     else
       c = "ffffff";
-    return Color(int.parse("0xff${c}"));
+    return Color(int.parse("0xff$c"));
   }
 
   __generateColor(var opacity, var color) {
-    if (type == "DARK") {
+    if (type == sType.DARK) {
       return Colors.white.withOpacity(opacity);
-    } else if (type == "SECONDARY" ||
-        type == "LIGHT" ||
-        mode == "MODERN" ||
-        type != "DARK") {
+    } else if (type == sType.SECONDARY ||
+        type == sType.LIGHT ||
+        mode == Mode.MODERN ||
+        type != sType.DARK) {
       return Colors.black.withOpacity(opacity);
     } else {
       return color.withOpacity(opacity);
@@ -247,7 +247,7 @@ class AdvanceSnackBar {
   }
 
   __genrateText() {
-    return (mode == "BASIC" || tittle == "")
+    return (mode == Mode.BASIC || tittle == "")
         ? Padding(
             padding: const EdgeInsets.symmetric(horizontal: 5),
             child: __getText(message, textSize, FontWeight.normal, 1.0),
@@ -260,7 +260,7 @@ class AdvanceSnackBar {
                 __getText(tittle, tittleSize, FontWeight.bold, 1.0),
                 isDivider
                     ? Divider(
-                        color: mode == "MODERN"
+                        color: mode == Mode.MODERN
                             ? lighten(Color(int.parse("0xff111111")), .1)
                             : dividerColor,
                         height: 2,
@@ -278,7 +278,7 @@ class AdvanceSnackBar {
       text,
       overflow: TextOverflow.ellipsis,
       style: TextStyle(
-          color: mode == "MODERN"
+          color: mode == Mode.MODERN
               ? __generateColor(opacity, textColor)
               : textColor,
           fontWeight: fontWeight,
@@ -287,11 +287,13 @@ class AdvanceSnackBar {
   }
 
   __generatemainAxisAlignment() {
-    if (isClosable || iconPosition == "NORMAL")
+    if (isClosable || iconPosition == IconPosition.NORMAL)
       return MainAxisAlignment.start;
-    else if (iconPosition == "LEFT" || iconPosition == "RIGHT")
+    else if (iconPosition == IconPosition.LEFT ||
+        iconPosition == IconPosition.RIGHT)
       return MainAxisAlignment.spaceBetween;
-    else if (iconPosition == "CENTER") return MainAxisAlignment.center;
+    else if (iconPosition == IconPosition.CENTER)
+      return MainAxisAlignment.center;
   }
 
   __generateRtl(var type) {
@@ -313,3 +315,7 @@ class AdvanceSnackBar {
     return hslLight.toColor();
   }
 }
+
+enum IconPosition { NORMAL, LEFT, RIGHT, CENTER }
+enum sType { DARK, ERROR, WARNING, INFO, PRIMARY, SECONDARY, LIGHT, SUCCESS }
+enum Mode { BASIC, MODERN, ADVANCE }

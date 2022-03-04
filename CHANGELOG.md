@@ -1,3 +1,10 @@
+## 1.0.6
+
+-- Change iconposition, type, mode String type to enum type.
+
+## 1.0.5
+
+-- Change some documents details.
 
 ## 1.0.4
 

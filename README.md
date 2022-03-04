@@ -47,6 +47,14 @@ The Advance_Notification provide multiple design of snackbar notification.
 ### Examples
 
 Advance_Notification have three mode in snackbar =>  BASIC,ADVANCE,MODERN.
+```diff
+-  Note: 
+- Veriosn 1.0.6 or above , we change iconposition, type, mode String type to enum type.
+- So you can use like -> 
+- iconPosition:IconPosition.LEFT or IconPosition.RIGHT  or IconPosition.CENTER AND
+- type:sType.DARK or sType.ERROR or sType.WARNING or sType.PRIMARY or sType.INFO or sType.LIGHT or sType.SUCCESS  AND
+- mode: Mode.BASIC or Mode.MODERN or Mode.ADVANCE
+```
 
 ### 1: Basic Mode
 

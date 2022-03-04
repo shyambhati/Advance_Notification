@@ -66,7 +66,7 @@ class _NotificationDemoState extends State<NotificationDemo> {
                   onClick: () {
                     AdvanceSnackBar(
                       message: "Notification Message",
-                      mode: "ADVANCE",
+                      mode: Mode.ADVANCE,
                     ).show(context);
                   },
                 ),
@@ -76,7 +76,7 @@ class _NotificationDemoState extends State<NotificationDemo> {
                   onClick: () {
                     AdvanceSnackBar(
                       message: "Notification Message",
-                      mode: "ADVANCE",
+                      mode: Mode.ADVANCE,
                       duration: Duration(seconds: 5),
                       bgColor: Colors.red,
                       textColor: Colors.black,
@@ -90,7 +90,7 @@ class _NotificationDemoState extends State<NotificationDemo> {
                   onClick: () {
                     AdvanceSnackBar(
                       message: "Notification Message",
-                      mode: "ADVANCE",
+                      mode: Mode.ADVANCE,
                       duration: Duration(seconds: 5),
                       bgColor: Colors.red,
                       textColor: Colors.white,
@@ -106,14 +106,15 @@ class _NotificationDemoState extends State<NotificationDemo> {
                   onClick: () {
                     AdvanceSnackBar(
                       message: "Notification Message",
-                      mode: "ADVANCE",
+                      mode: Mode.ADVANCE,
                       duration: Duration(seconds: 5),
                       textColor: Colors.white,
                       iconColor: Colors.white,
-                      type: "ERROR",
+                      type: sType.ERROR,
                       textSize: 20,
                       isIcon: true,
-                      iconPosition: "RIGHT", // it shold be after text
+                      iconPosition:
+                          IconPosition.RIGHT, // it shold be after text
                     ).show(context);
                   },
                 ),
@@ -123,15 +124,16 @@ class _NotificationDemoState extends State<NotificationDemo> {
                   onClick: () {
                     AdvanceSnackBar(
                       message: "Notification Message",
-                      mode: "ADVANCE",
+                      mode: Mode.ADVANCE,
                       duration: Duration(seconds: 5),
                       textColor: Colors.white,
                       iconColor: Colors.white,
-                      type: "ERROR",
+                      type: sType.ERROR,
                       textSize: 20,
                       isIcon: true,
-                      closeIconPosition: "LEFT",
-                      iconPosition: "RIGHT", // it shold be after text
+                      closeIconPosition: IconPosition.LEFT,
+                      iconPosition:
+                          IconPosition.RIGHT, // it shold be after text
                     ).show(context);
                   },
                 ),
@@ -140,7 +142,7 @@ class _NotificationDemoState extends State<NotificationDemo> {
                   color: Colors.brown,
                   onClick: () {
                     AdvanceSnackBar(
-                            message: "Notification Message", mode: "MODERN")
+                            message: "Notification Message", mode: Mode.MODERN)
                         .show(context);
                   },
                 ),
@@ -150,8 +152,8 @@ class _NotificationDemoState extends State<NotificationDemo> {
                   onClick: () {
                     AdvanceSnackBar(
                             message: "Notification Message",
-                            mode: "MODERN",
-                            type: "WARNING")
+                            mode: Mode.MODERN,
+                            type: sType.WARNING)
                         .show(context);
                   },
                 ),
@@ -161,8 +163,8 @@ class _NotificationDemoState extends State<NotificationDemo> {
                   onClick: () {
                     AdvanceSnackBar(
                             message: "Notification Message",
-                            mode: "MODERN",
-                            type: "ERROR",
+                            mode: Mode.MODERN,
+                            type: sType.ERROR,
                             isIcon: true)
                         .show(context);
                   },
@@ -173,8 +175,8 @@ class _NotificationDemoState extends State<NotificationDemo> {
                   onClick: () {
                     AdvanceSnackBar(
                             message: "Notification Message content",
-                            mode: "MODERN",
-                            type: "ERROR",
+                            mode: Mode.MODERN,
+                            type: sType.ERROR,
                             tittle: "Tittle message",
                             isIcon: true)
                         .show(context);
@@ -186,10 +188,10 @@ class _NotificationDemoState extends State<NotificationDemo> {
                   onClick: () {
                     AdvanceSnackBar(
                             message: "Notification Message ",
-                            mode: "MODERN",
-                            type: "PRIMARY",
+                            mode: Mode.MODERN,
+                            type: sType.SUCCESS,
                             tittle: "Tittle message",
-                            iconPosition: "RIGHT",
+                            iconPosition: IconPosition.RIGHT,
                             child: Padding(
                               padding: const EdgeInsets.only(left: 2),
                               child: Icon(
@@ -208,10 +210,10 @@ class _NotificationDemoState extends State<NotificationDemo> {
                   onClick: () {
                     AdvanceSnackBar(
                             message: "Notification Message ",
-                            mode: "ADVANCE",
-                            type: "PRIMARY",
+                            mode: Mode.ADVANCE,
+                            type: sType.PRIMARY,
                             tittle: "Tittle message",
-                            iconPosition: "RIGHT",
+                            iconPosition: IconPosition.RIGHT,
                             dividerColor: Colors.red,
                             onClick: () {
                               print("Hello");
